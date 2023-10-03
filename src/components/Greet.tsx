@@ -1,7 +1,7 @@
-// Typing individual props
+// Typing individual props and optionals - i.e. messageCount
 type GreetProps = {
   name: string;
-  messageCount: number;
+  messageCount?: number; // ? means optional
   isLoggedIn: boolean;
 };
 
