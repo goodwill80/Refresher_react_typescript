@@ -6,6 +6,9 @@ import PersonList from './components/PersonList';
 import Status from './components/Status';
 import Heading from './components/Heading';
 import Oscar from './components/Oscar';
+import Button from './components/Button';
+import Input from './components/Input';
+import Container from './components/Container';
 
 function App() {
   const personName = {
@@ -39,6 +42,13 @@ function App() {
       <Person personName={personName} />
       <PersonList nameList={nameList} />
       <Status status="error" />
+      <Input value="" handleChange={(e) => console.log(e)} />
+      <Button
+        handleClickEvent={(e, id) => console.log('Button clicked!', e, id)}
+      />
+      <Container
+        styles={{ border: '1 px solid black', padding: '1rem', color: 'red' }}
+      />
     </>
   );
 }
