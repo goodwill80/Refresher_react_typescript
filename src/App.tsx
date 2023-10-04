@@ -9,6 +9,7 @@ import Oscar from './components/Oscar';
 import Button from './components/Button';
 import Input from './components/Input';
 import Container from './components/Container';
+import Counter from './components/state/Counter';
 
 function App() {
   const personName = {
@@ -49,6 +50,7 @@ function App() {
       <Container
         styles={{ border: '1 px solid black', padding: '1rem', color: 'red' }}
       />
+      <Counter />
     </>
   );
 }
