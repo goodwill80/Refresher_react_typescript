@@ -10,6 +10,8 @@ import Button from './components/Button';
 import Input from './components/Input';
 import Container from './components/Container';
 import Counter from './components/state/Counter';
+import Box from './components/context/Box';
+import UserComp from './components/context/UserComp';
 
 function App() {
   const personName = {
@@ -51,6 +53,8 @@ function App() {
         styles={{ border: '1 px solid black', padding: '1rem', color: 'red' }}
       />
       <Counter />
+      <Box />
+      <UserComp />
     </>
   );
 }
