@@ -12,6 +12,7 @@ import Container from './components/Container';
 import Counter from './components/state/Counter';
 import Box from './components/context/Box';
 import UserComp from './components/context/UserComp';
+import MutableRef from './components/ref/MutableRef';
 
 function App() {
   const personName = {
@@ -55,6 +56,7 @@ function App() {
       <Counter />
       <Box />
       <UserComp />
+      <MutableRef />
     </>
   );
 }
