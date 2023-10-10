@@ -15,6 +15,7 @@ import UserComp from './components/context/UserComp';
 import MutableRef from './components/ref/MutableRef';
 import Private from './components/componentProps/Private';
 import Profile from './components/componentProps/Profile';
+import List from './components/generics/List';
 
 function App() {
   const personName = {
@@ -60,6 +61,11 @@ function App() {
       <UserComp />
       <MutableRef />
       <Private isLoggedIn={true} component={Profile} />
+      <List
+        items={['Batman', 'Superman', 'x-men']}
+        onClick={(item) => console.log(item)}
+      />
+      <List items={[1, 2, 3, 4, 5]} onClick={(item) => console.log(item)} />
     </>
   );
 }
