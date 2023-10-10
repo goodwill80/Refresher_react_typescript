@@ -13,6 +13,8 @@ import Counter from './components/state/Counter';
 import Box from './components/context/Box';
 import UserComp from './components/context/UserComp';
 import MutableRef from './components/ref/MutableRef';
+import Private from './components/componentProps/Private';
+import Profile from './components/componentProps/Profile';
 
 function App() {
   const personName = {
@@ -57,6 +59,7 @@ function App() {
       <Box />
       <UserComp />
       <MutableRef />
+      <Private isLoggedIn={true} component={Profile} />
     </>
   );
 }
